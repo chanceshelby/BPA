@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>BPA Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>BPA<br>TOPIC</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="BPA_2018.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="Transportation.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Transportation</a> 
+    <a href="Maps.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Maps</a> 
+    <a href="Attractions.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attractions</a> 
+    <a href="Food.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Food</a> 
+    <a href="Attire.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attire</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>BPA</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+ 
+  <!-- Photo grid (modal) -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Maps.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Text</p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.111263997889!2d-77.0118586851133!3d38.89857087957043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b820ae1feb9d%3A0x64d10af13fef3bbd!2s660+North+Capitol+St+NW%2C+Washington%2C+DC+20001!5e0!3m2!1sen!2sus!4v1546704652648" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <p>Text Text Text</p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Chance Shelby, Kaleb Rapsilver, Austin Douglas and David Hernandez<a href="" title="" target="_blank" class="w3-hover-opacity"></a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
