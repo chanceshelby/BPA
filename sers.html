@@ -1,6 +1,15 @@
-<center>
+<style>
+    .box-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+        </div>
+
 <form>Below select all certifications and proceed to upload your resume once you click the "Email Resume" button.
-    <fieldset id="mySelect" style="border: 0px solid #000;padding:5px">
+    <div id="box-div">
+    <fieldset id="mySelect" style="border: 0px solid #000;padding:5px;float:left">
   <br>
         <input type="checkbox" value="AA111">API 510
   <br>
@@ -33,6 +42,7 @@
         <input type="checkbox" value="OO56">AUTOCAD
        <br>
     </fieldset>
+        </div>
 </form>
 <button type="button" onclick="displayResult()">Confirm Selection</button>
 <a id="send" href="mailto:wesley.shelby@ferinspection.com?&body=">Email Resume</a>
